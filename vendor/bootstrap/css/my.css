@@ -1,0 +1,109 @@
+/* dashboard */
+.bg-gradient-primary {
+  background-color: #07689f;
+  background-image: linear-gradient(180deg, #07689f 10%, #07689f 100%);
+}
+
+.namaAdmin {
+  font-size: 16px;
+  font-weight: bold;
+  color: #07689f;
+}
+
+.search {
+  background-color: #07689f;
+}
+
+.btn:hover {
+  background-color: #0988d0;
+}
+
+.hurufatas {
+  font-size: 23px;
+  color: black;
+}
+
+/* Gaya untuk input saat aktif */
+/* input[type="search"]:focus {
+  border-color: white;
+  border: 0px;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+} */
+/* .bordersaya {
+  border-color: #b2b5c7;
+} */
+
+/* parkir masuk */
+.btnsubmit {
+  background-color: #07689f;
+  color: white;
+}
+.btnsubmit:hover {
+  background-color: #0988d0;
+  color: white;
+}
+.textjudultabel {
+  color: #07689f;
+}
+.textket {
+  font-size: 15px;
+  color: #07689f;
+}
+
+/* parkir keluar */
+.btnkeluar:hover {
+  background-color: red;
+}
+
+.btntagihan:hover {
+  background-color: #1f8f5b;
+}
+
+.dropdown-item {
+  color: #3a3b45;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white;
+  background-color: #0988d0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  background-color: #07689f;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #717384;
+  border-color: #6b6d7d;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #858796;
+  border-color: #858796;
+}
+
+.btn-primarykeluar {
+  color: #fff;
+  background-color: #07689f;
+  border-color: #07689f;
+}
+
+.btn-primarykeluar:hover {
+  color: #fff;
+  background-color: #0988d0;
+  border-color: #0988d0;
+}
+
+
+
+		.page-item.active .page-link {
+			z-index: 3;
+			color: #fff;
+			background-color: #07689f;
+			border-color: #07689f;
+		}
