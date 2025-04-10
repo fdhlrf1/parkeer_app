@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Jun 2024 pada 03.01
+-- Waktu pembuatan: 10 Apr 2025 pada 08.46
 -- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.0.30
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,7 @@ CREATE TABLE `tbblok_parkir` (
 --
 
 INSERT INTO `tbblok_parkir` (`id_blok`, `Blok`, `Total_Tempat`, `Terisi`) VALUES
-(1, 'A', 28, 2),
+(1, 'A', 27, 3),
 (2, 'B', 29, 1),
 (3, 'C', 39, 1),
 (4, 'D', 30, 0);
@@ -114,7 +114,8 @@ INSERT INTO `tbpengendara_masuk` (`id_parkir`, `No_Polisi`, `Merk`, `Jenis`, `Bl
 ('PRK001', 'A 5535 TGT', 'Honda', 'Motor', 'A', '2024-06-05 03:23:16', 'Super Petugas'),
 ('PRK002', 'D 8888 JUU', 'Mazda', 'Mobil', 'A', '2024-06-05 03:24:09', 'Super Petugas'),
 ('PRK003', 'D 8787 GHG', 'Toyota', 'Mobil', 'B', '2024-06-05 03:28:20', 'Super Petugas'),
-('PRK004', 'AB 3123 UAB', 'Isuzu', 'Mobil', 'C', '2024-06-07 11:39:12', 'Super Petugas');
+('PRK004', 'AB 3123 UAB', 'Isuzu', 'Mobil', 'C', '2024-06-07 11:39:12', 'Super Petugas'),
+('PRK005', 'DS 2132 DSD', 'Honda', 'Motor', 'A', '2024-09-13 10:12:21', 'Super Admin');
 
 --
 -- Trigger `tbpengendara_masuk`
@@ -147,8 +148,8 @@ CREATE TABLE `tbpengguna` (
 --
 
 INSERT INTO `tbpengguna` (`id`, `nama`, `username`, `password`, `hak_akses`) VALUES
-(1, 'Super Admin', 'admin', '$2y$10$1tfmkQ2t/JUUat5JdnMtLOIyA.7/qQzd4IpShazEGNojdiGgc/02O', 'Admin'),
-(2, 'Super Petugas', 'petugas', '$2y$10$1fRdk8CmK.138zfEHaAZ/O5vIwMmauDsUmExVtr37EV9f1o7WVfVK', 'Petugas'),
+(1, 'Admin', 'admin', '$2y$10$1tfmkQ2t/JUUat5JdnMtLOIyA.7/qQzd4IpShazEGNojdiGgc/02O', 'Admin'),
+(2, 'Petugas', 'petugas', '$2y$10$1fRdk8CmK.138zfEHaAZ/O5vIwMmauDsUmExVtr37EV9f1o7WVfVK', 'Petugas'),
 (5, 'FadhilRafiFauzan', 'fadhil', '$2y$10$n06oM6SOTJNaISRmLMdALey6GF20BPzBa.otVVJa5F/NU9pngAxOi', 'Petugas');
 
 -- --------------------------------------------------------
